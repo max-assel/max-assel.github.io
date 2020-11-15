@@ -29,6 +29,8 @@ p {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     line-height: 1.4em;
     color: #333;
+    margin:0;
+    padding:0;
 }
 b {
     font-size: 1.5em;
