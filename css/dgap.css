@@ -1,0 +1,22 @@
+.dgap-gif-container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.dgap-gif-container img {
+    border: 5px solid black;
+    margin-left: 5px;
+    margin-left: 5px;
+    width: 32%;
+    display: inline-block;
+}
+
+.dgap-links-container {
+    margin-bottom: 25px;
+}
+
+.dgap-links-container a {
+    color: #5c6b28;
+    font-size: 30px;
+}

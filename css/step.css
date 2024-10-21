@@ -1,0 +1,22 @@
+.step-img-container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.step-img-container img {
+    border: 5px solid black;
+    margin-left: 5px;
+    margin-left: 5px;
+    width: 49%;
+    display: inline-block;
+}
+
+.step-links-container {
+    margin-bottom: 25px;
+}
+
+.step-links-container a {
+    color: #5c6b28;
+    font-size: 30px;
+}

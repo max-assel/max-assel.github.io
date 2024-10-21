@@ -1,47 +1,85 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Max's Personal Website</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<nav>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/publications.html">Publications</a></li>
-			<li><a href="/research_projects.html">Current Research</a></li>
-			<li><a href="/research_experience.html">Past Research</a></li>
-			<li><a href="/fun.html">Not Research</a></li>
-		</ul>
-	</nav>	
-	<body>
-		<div class="container">
-			<div class="blurb">
-				<h1>Hello, my name is Max Asselmeier</h1>
-					<img src="/assets/IMG-0430.jpg" width="225" style="float: left; clear: left; margin-right: 10px">
-					<p>Welcome to my website! Here is a little information about me:</p>
-					<p>I am from Wheaton, Illinois which is a northwest suburb of Chicago. </p>
-					<p>I graduated from the University of Illinois at Urbana-Champaign with a BS in mechanical engineering and a minor in computer science. </p>
-					<p>I am a Robotics PhD student at Georgia Tech where I am advised by Patricio Vela and Ye Zhao. </p>
-					<p>I am investigating how to design a theoretically grounded, perception-informed framework for legged navigation that can provide formal guarantees about safety and task completion.</p> 
-					<p> I love <a href="/assets/IMG-1941.jpg">working</a> <a href="/assets/IMG-6925.PNG">with</a> <a href="/assets/lidar_photo.jpg">robots</a>,
-							   <a href="/assets/IMG-1192.jpg">going</a> <a href="/assets/IMG-1663.jpg">to</a> <a href="/assets/IMG-1897.jpg">concerts</a>,
-						   and <a href="/assets/IMG_2499.jpg">playing</a> <a href="/assets/IMG_2571.jpg">soccer</a>. </p>		
-				<h1>What's New</h1>
-				<ul>
-				  <li> <p> <strong>January 2024:</strong> Some <a href="https://youtu.be/NHK-VPDyDm0?si=KX8ST8cqpY5emT_0">work</a> of ours on multi-modal motion planning for quadrupeds on rebar grids was accepted to ICRA 2024 </p></li>
-				  <li> <p> <strong>April 2023:</strong> I was awarded an NSF Graduate Research Fellowship, holy moly! </p> </li>
-				  <li> <p> <strong>January 2023:</strong> Some initial <a href="https://www.youtube.com/watch?v=avUnefrbhY8">work</a> from our labs' collaboration on quadrupedal navigation was accepted to ICRA 2023 </p> </li>
-				</ul>  
-			</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<div class="container">
-			<footer>
-			<ul>
-				<li><a href="mailto:mass@gatech.edu">email</a></li>
-				<li><a href="https://github.com/ma53ma">github</a></li>
-				</ul>
-			</footer>
-		</div><!-- /.container -->
-	</body>
-</html>
+
+<head>
+    <title>Max Asselmeier - Main</title> <!-- Title of the page -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- Link to the CSS file -->
+    <script src="https://kit.fontawesome.com/34a5319313.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+
+        <div class="sidebar-header">
+            <div class="sidebar-user">
+                <p>Max Asselmeier</p>
+            </div>
+            <img src="/assets/max.jpg" class="sidebar-user-img">
+        </div>
+
+        <div class="sidebar-catchphrase">
+            <p>Perception-Informed Legged Navigation</p>
+        </div>
+            
+        <div class="sidebar-button-container">
+            <a href="./index.html" class="button">Home</a> <!-- 'a' tag defines a hyperlink -->
+            <div class="research-dropdown">
+                <a href="./html/research.html" class="button">Research</a>
+                <div class="research-dropdown-content">
+                    <a href="./html/dynamic_gap.html">Dynamic Gap</a>
+                    <a href="./html/steppability.html">Steppability</a>
+                    <a href="./html/footstep.html">Footstep Planning</a>
+                </div>
+            </div>
+            <a href="./html/not_research.html" class="button">Not Research</a>
+        </div>
+
+        <div class="link-container">
+            <a href="https://github.com/max-assel" class="iconlink" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="mailto:mass@gatech.edu" class="iconlink" target="_blank">
+                <i class="fa-solid fa-envelope"></i>      
+            </a>     
+            
+            <a href="https://scholar.google.com/citations?user=8r_IwQ0AAAAJ&hl=en" class="iconlink" target="_blank">
+                <i class="fa-brands fa-google-scholar"></i>
+            </a>      
+            
+            <a href="https://www.linkedin.com/in/maxasselmeier/" class="iconlink" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>                 
+        </div>
+    
+        <div class="logo">
+            <img src="/assets/quad.gif" class="sidebar-logo">
+        </div>
+    
+    </div>
+
+    <div class="main-content">
+        <h1>Hello and welcome! My name is Max Asselmeier.</h1>
+        <h2>
+            <p>Here is a little information about me:</p>
+            <p>I am from Wheaton, Illinois which is a northwest suburb of Chicago. </p>
+            <p>I graduated from the University of Illinois at Urbana-Champaign with a BS in mechanical engineering and a minor in computer science. </p>
+            <p>I am a Robotics PhD student at Georgia Tech where I am advised by Patricio Vela and Ye Zhao. </p>
+            <p>I am investigating how to design a theoretically grounded, perception-informed framework for legged navigation that can provide formal guarantees about safety and task completion.</p> 
+            <p> I love <a href="/assets/atlas.jpg" target="_blank">working</a> <a href="/assets/soft_arm.png" target="_blank">with</a> <a href="/assets/quad.jpg" target="_blank">robots</a>,
+                       <a href="/assets/cbarnett.jpg" target="_blank">going</a> <a href="/assets/shins.jpg" target="_blank">to</a> <a href="/assets/alvvays.jpg" target="_blank">concerts</a>,
+                   and playing soccer! </p>		
+        </h2>
+
+        <h1>What's New</h1>
+        <ul class="updates">
+            <li> <p> <strong>September 2024:</strong> We submitted <a href="https://arxiv.org/abs/2210.05022" target="_blank">some work</a> on perception-informed planning for mobile robots in dynamic environments to ICRA 2025.</p></li>
+            <li> <p> <strong>May 2024:</strong> I presented our multi-modal motion planning framework for quadrupeds at ICRA 2024 in Yokohama, Japan </p></li>
+            <li> <p> <strong>January 2024:</strong> Some <a href="https://youtu.be/NHK-VPDyDm0?si=KX8ST8cqpY5emT_0" target="_blank">work</a> of ours on multi-modal motion planning for quadrupeds on rebar grids was accepted to ICRA 2024 </p></li>
+            <li> <p> <strong>April 2023:</strong> I was awarded an NSF Graduate Research Fellowship! </p> </li>
+            <li> <p> <strong>January 2023:</strong> Some initial <a href="https://www.youtube.com/watch?v=avUnefrbhY8" target="_blank">work</a> from our labs' collaboration on quadrupedal navigation was accepted to ICRA 2023 </p> </li>
+        </ul>  
+
+    </div>
+
+</body>

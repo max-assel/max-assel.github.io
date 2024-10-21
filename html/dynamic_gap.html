@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dynamic Gap</title> <!-- Title of the page -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="../css/dgap.css"> <!-- Link to the CSS file -->
+    <script src="https://kit.fontawesome.com/34a5319313.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+
+        <div class="sidebar-header">
+            <div class="sidebar-user">
+                <p>Max Asselmeier</p>
+            </div>
+            <img src="/assets/max.jpg" class="sidebar-user-img">
+        </div>
+
+        <div class="sidebar-catchphrase">
+            <p>Perception-Informed Legged Navigation</p>
+        </div>
+            
+        <div class="sidebar-button-container">
+            <a href="../index.html" class="button">Home</a> <!-- 'a' tag defines a hyperlink -->
+            <div class="research-dropdown">
+                <a href="./research.html" class="button">Research</a>
+                <div class="research-dropdown-content">
+                    <a href="./dynamic_gap.html">Dynamic Gap</a>
+                    <a href="./steppability.html">Steppability</a>
+                    <a href="./footstep.html">Footstep Planning</a>
+                </div>
+            </div>
+            <a href="./not_research.html" class="button">Not Research</a>
+        </div>
+
+        <div class="link-container">
+            <a href="https://github.com/max-assel" class="iconlink" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="mailto:mass@gatech.edu" class="iconlink" target="_blank">
+                <i class="fa-solid fa-envelope"></i>      
+            </a>     
+            
+            <a href="https://scholar.google.com/citations?user=8r_IwQ0AAAAJ&hl=en" class="iconlink" target="_blank">
+                <i class="fa-brands fa-google-scholar"></i>
+            </a>      
+            
+            <a href="https://www.linkedin.com/in/maxasselmeier/" class="iconlink" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>                 
+        </div>
+    
+        <div class="logo">
+            <img src="/assets/quad.gif" class="sidebar-logo">
+        </div>
+    
+    </div>
+
+    <div class="main-content">
+        <h1>Dynamic Gap</h1>
+        <h2>
+            <p>Gap-based planners are a form of local planner which opts to 
+                act on the "gaps" of free space within the local environment 
+                as opposed to taking an obstacle space-based approach.</p>
+
+            <p>These planners have been able to provide safety guarantees and
+                abide by kinematic and geometric constrants of the host robot, 
+                but few efforts have been done to extend this class of planners
+                to dynamic environments using perception-informed tactics.</p>
+
+            <p>With this work, we take our prior perception-informed gap-based 
+                planning approach and apply it to dynamic environments.</p>
+            </p>
+            
+            <div class="dgap-gif-container">
+                <img src="/assets/dgap_empty.gif" class="dgap-gif">
+                <img src="/assets/dgap_factory.gif" class="dgap-gif">
+                <img src="/assets/dgap_hospital.gif" class="dgap-gif">
+            </div>
+
+            <p>Want to learn more? Check out the following links:</p>
+            <div class="dgap-links-container">
+                <ul>
+                    <li><a href="https://arxiv.org/abs/2210.05022" target="_blank">Paper</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=EyW7pQFC8cQ" target="_blank">Video</a></li>
+                    <li><a href="https://github.com/ivaROS/DynamicGap" target="_blank">GitHub</a></li>
+                </ul>
+            </div>         
+        </h2>
+
+    </div>
+
+</body>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Steppability</title> <!-- Title of the page -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="../css/step.css"> <!-- Link to the CSS file -->
+    <script src="https://kit.fontawesome.com/34a5319313.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+
+        <div class="sidebar-header">
+            <div class="sidebar-user">
+                <p>Max Asselmeier</p>
+            </div>
+            <img src="/assets/max.jpg" class="sidebar-user-img">
+        </div>
+
+        <div class="sidebar-catchphrase">
+            <p>Perception-Informed Legged Navigation</p>
+        </div>
+            
+        <div class="sidebar-button-container">
+            <a href="../index.html" class="button">Home</a> <!-- 'a' tag defines a hyperlink -->
+            <div class="research-dropdown">
+                <a href="./research.html" class="button">Research</a>
+                <div class="research-dropdown-content">
+                    <a href="./dynamic_gap.html">Dynamic Gap</a>
+                    <a href="./steppability.html">Steppability</a>
+                    <a href="./footstep.html">Footstep Planning</a>
+                </div>
+            </div>
+            <a href="./not_research.html" class="button">Not Research</a>
+        </div>
+
+        <div class="link-container">
+            <a href="https://github.com/max-assel" class="iconlink" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="mailto:mass@gatech.edu" class="iconlink" target="_blank">
+                <i class="fa-solid fa-envelope"></i>      
+            </a>     
+            
+            <a href="https://scholar.google.com/citations?user=8r_IwQ0AAAAJ&hl=en" class="iconlink" target="_blank">
+                <i class="fa-brands fa-google-scholar"></i>
+            </a>      
+            
+            <a href="https://www.linkedin.com/in/maxasselmeier/" class="iconlink" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>                 
+        </div>
+    
+        <div class="logo">
+            <img src="/assets/quad.gif" class="sidebar-logo">
+        </div>
+    
+    </div>
+
+    <div class="main-content">
+        <h1>Steppability</h1>
+        <h2>
+            <p>A crucial element in the legged planning pipeline is determing
+                where in our local environment we can plan footsteps.
+            </p>
+
+            <p>Often, this is accomplishing through classical point cloud
+                processing approaches such as RANSAC, region growing, etc. 
+                However, when you are running onboard hardware and need 
+                to operate in realtime for tasks like footstep planning,
+                these approaches can bottleneck your framework and limit
+                your ability to plan reactively.
+            </p>
+
+            <p>With this work, we wanted to see if this task can be 
+                accomplished through a learned approach where we bypass
+                the expensive point cloud processing step and treat
+                this is a segmentation task.</p>
+            </p>
+            
+            <div class="step-img-container">
+                <img src="/assets/pc_step1.png" class="step-img">
+                <img src="/assets/pc_step2.png" class="step-img">
+            </div>
+
+            <p>Want to learn more? Check out the following links:</p>
+            <div class="step-links-container">
+                <ul>
+                    <li><a href="https://lab-idar.gatech.edu/wp-content/uploads/2024/06/MMP_Steppability_24.pdf" target="_blank">Paper</a></li>
+                </ul>
+            </div>         
+        </h2>
+
+    </div>
+
+</body>

@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font style */
+}
+
+.sidebar {
+    height: 100vh; /* vh means viewport height, so 100% of user's screen */
+    min-height: fit-content; /* Minimum height */
+    width: 250px;
+    background-color:#263e0e;
+    padding: 20px; /* Padding in all directions*/
+    position: fixed;
+}
+
+.sidebar-user {
+    margin-bottom: 25px;
+}
+
+.sidebar-header {
+    margin-bottom: 10px;
+}
+
+
+.sidebar-user p {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sidebar-user-img {
+    width: 200px;
+    border: 5px solid #eee;
+
+    /* * Center the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Add margin below */
+    margin-bottom: 25px;
+
+}
+
+.sidebar-catchphrase {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+    /* Add margin below */
+    margin-bottom: 25px;
+}
+
+.sidebar-button-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* https://www.w3schools.com/css/css3_buttons.asp */
+.button {
+
+    height: 50px;
+
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+
+    /* Keep buttons on their own lines and center */
+    width: 100%;
+    display:inline-block;
+
+    text-decoration: none !important;
+
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #e7e8a6; 
+    color: black;
+}
+
+.research-dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.research-dropdown-content a {
+    width: 218px;
+    color: white;
+    background-color: #5c6b28;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.research-dropdown-content a:hover {
+    color: black;
+    background-color: #f1f1f1;
+}
+
+.research-dropdown:hover .research-dropdown-content {
+    display: block;
+}
+
+.link-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconlink {
+    font-size: 40px;
+
+    color: inherit; /* Get rid of hyperlink color */
+}
+
+.sidebar-logo {
+    /* Add margin top */
+    margin-top: 10px;
+
+
+    width: 150px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    
+}
+
+.main-content {
+    padding: 20px; /* Padding in all directions*/
+    margin-left: 300px;
+}
+
+.main-content h1 {
+    margin-bottom: 25px;
+}
+
+.main-content p {
+    margin-bottom: 25px;
+    color:#748e40;
+    font-size: 30px;
+}
+
+.main-content a {
+    text-decoration: none !important;
+    color: #5c6b28;
+}
+
+.updates p {
+    color: #748e40;
+    font-size: 30px;
+}
+
+.dgap-gif-container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.dgap-gif-container img {
+    border: 5px solid black;
+    margin-left: 5px;
+    margin-left: 5px;
+    width: 32%;
+    display: inline-block;
+}
+
+.dgap-links-container {
+    margin-bottom: 25px;
+}
+
+.dgap-links-container a {
+    color: #5c6b28;
+    font-size: 30px;
+}
+
+.step-gif-container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.playlist {
+    margin-bottom: 25px;
+}

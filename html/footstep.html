@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multi-modal Footstep Planning</title> <!-- Title of the page -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="../css/mmp.css"> <!-- Link to the CSS file -->
+    <script src="https://kit.fontawesome.com/34a5319313.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+
+        <div class="sidebar-header">
+            <div class="sidebar-user">
+                <p>Max Asselmeier</p>
+            </div>
+            <img src="/assets/max.jpg" class="sidebar-user-img">
+        </div>
+
+        <div class="sidebar-catchphrase">
+            <p>Perception-Informed Legged Navigation</p>
+        </div>
+            
+        <div class="sidebar-button-container">
+            <a href="../index.html" class="button">Home</a> <!-- 'a' tag defines a hyperlink -->
+            <div class="research-dropdown">
+                <a href="./research.html" class="button">Research</a>
+                <div class="research-dropdown-content">
+                    <a href="./dynamic_gap.html">Dynamic Gap</a>
+                    <a href="./steppability.html">Steppability</a>
+                    <a href="./footstep.html">Footstep Planning</a>
+                </div>
+            </div>
+            <a href="./not_research.html" class="button">Not Research</a>
+        </div>
+
+        <div class="link-container">
+            <a href="https://github.com/max-assel" class="iconlink" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="mailto:mass@gatech.edu" class="iconlink" target="_blank">
+                <i class="fa-solid fa-envelope"></i>      
+            </a>     
+            
+            <a href="https://scholar.google.com/citations?user=8r_IwQ0AAAAJ&hl=en" class="iconlink" target="_blank">
+                <i class="fa-brands fa-google-scholar"></i>
+            </a>      
+            
+            <a href="https://www.linkedin.com/in/maxasselmeier/" class="iconlink" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>                 
+        </div>
+    
+        <div class="logo">
+            <img src="/assets/quad.gif" class="sidebar-logo">
+        </div>
+    
+    </div>
+
+    <div class="main-content">
+        <h1>Multi-modal Footstep Planning</h1>
+        <h2>
+            <p>Footstep planning is fundamentally a hybrid planning problem: we 
+                must choose a discrete set of footstep locations (and often times
+                a discrete set of regions that these footsteps are placed upon) 
+                while also synthesizing continuous trajectories that enable the 
+                robot to transition between these footsteps.
+            </p>
+
+            <p>You can attack this problem through many ways: pure search, pure optimization,
+                or, as we did, a combination of these two approaches. This allows us to cater
+                the benefits of search to the discrete planning problem and the benefits of 
+                optimization to the continuous planning problem.
+            </p>
+
+            <p>When you choose to take a hierarchical approach such as this, you must then
+                also make considerations about how your different hierarchy levels will
+                coordinate. To provide some synergy and integration between these two
+                planning levels, we adapt the concept of offline experience.
+            </p>
+            
+            <div class="mmp-img-container">
+                <img src="/assets/uneven_screenshot.png" class="mmp-img">
+                <img src="/assets/ramp_screenshot.png" class="mmp-img">
+                <img src="/assets/chotu.png" class="mmp-img">
+            </div>
+
+            <p>Want to learn more? Check out the following links:</p>
+            <div class="mmp-links-container">
+                <ul>
+                    <li><a href="https://arxiv.org/abs/2311.08354" target="_blank">Paper</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=NHK-VPDyDm0&t=2s" target="_blank">Video</a></li>
+                </ul>
+            </div>         
+        </h2>
+
+    </div>
+
+</body>
