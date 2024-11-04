@@ -5,11 +5,10 @@
 
 .sidebar {
     height: 100vh; /* vh means viewport height, so 100% of user's screen */
-    min-height: fit-content; /* Minimum height */
     width: 250px;
     background-color:#263e0e;
     padding: 20px; /* Padding in all directions*/
-    position: fixed;
+    position: fixed; /* Fixed position, required to get main body to start at top of main section*/
 }
 
 .sidebar-user {
@@ -187,4 +186,15 @@
 
 .playlist {
     margin-bottom: 25px;
+}
+
+.cv {
+    width: 90%;
+    display: block;
+    min-height: 100vh;
+
+    /* * Center the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
