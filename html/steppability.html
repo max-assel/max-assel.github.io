@@ -62,7 +62,7 @@
     <div class="main-content">
         <h1>Steppability</h1>
         <h2>
-            <p>A crucial element in the legged planning pipeline is determing
+            <p>A crucial element in the legged planning pipeline is determining
                 where in our local environment we can plan footsteps.
             </p>
 
@@ -70,25 +70,31 @@
                 processing approaches such as RANSAC, region growing, etc. 
                 However, when you are running onboard hardware and need 
                 to operate in realtime for tasks like footstep planning,
-                these approaches can bottleneck your framework and limit
-                your ability to plan reactively.
+                these point cloud-based approaches can bottleneck your 
+                framework and limit your ability to plan reactively.
             </p>
 
-            <p>With this work, we wanted to see if this task can be 
+            <p>With this work, we are investigating if this task of
+                local environment steppability evaluation can be 
                 accomplished through a learned approach where we bypass
-                the expensive point cloud processing step and treat
-                this is a segmentation task.</p>
+                the expensive point cloud processing step and instead 
+                treat it is a segmentation task.</p>
             </p>
             
             <div class="step-img-container">
-                <img src="/assets/pc_step1.png" class="step-img">
+                <img src="/assets/steppability_frames.png" class="step-img">
+                <img src="/assets/egocan.png" class="step-img">
+            </div>
+
+            <div class="step-img-container">
+                <img src="/assets/steppability.png" class="step-img">
                 <img src="/assets/pc_step2.png" class="step-img">
             </div>
 
             <p>Want to learn more? Check out the following links:</p>
             <div class="step-links-container">
                 <ul>
-                    <li><a href="https://lab-idar.gatech.edu/wp-content/uploads/2024/06/MMP_Steppability_24.pdf" target="_blank">Paper</a></li>
+                    <li><a href="https://arxiv.org/abs/2501.00112" target="_blank">Paper</a></li>
                 </ul>
             </div>         
         </h2>
