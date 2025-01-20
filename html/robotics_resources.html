@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Robotics Resources</title> <!-- Title of the page -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="../css/resources.css"> <!-- Link to the CSS file -->
+    <script src="https://kit.fontawesome.com/34a5319313.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+
+        <div class="sidebar-header">
+            <div class="sidebar-user">
+                <p>Max Asselmeier</p>
+            </div>
+            <img src="/assets/max.jpg" class="sidebar-user-img">
+        </div>
+
+        <div class="sidebar-catchphrase">
+            <p>Perception-Informed Legged Navigation</p>
+        </div>
+            
+        <div class="sidebar-button-container">
+            <a href="../index.html" class="button">Home</a> <!-- 'a' tag defines a hyperlink -->
+            <div class="research-dropdown">
+                <a href="./research.html" class="button">Research</a>
+                <div class="research-dropdown-content">
+                    <a href="./dynamic_gap.html">Dynamic Gap</a>
+                    <a href="./steppability.html">Steppability</a>
+                    <a href="./footstep.html">Footstep Planning</a>
+                </div>
+            </div>
+            <a href="./not_research.html" class="button">Not Research</a>
+            <a href="./robotics_resources.html" class="button">Robotics Resources</a>
+        </div>
+
+        <div class="link-container">
+            <a href="https://github.com/max-assel" class="iconlink" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="mailto:mass@gatech.edu" class="iconlink" target="_blank">
+                <i class="fa-solid fa-envelope"></i>      
+            </a>     
+            
+            <a href="https://scholar.google.com/citations?user=8r_IwQ0AAAAJ&hl=en" class="iconlink" target="_blank">
+                <i class="fa-brands fa-google-scholar"></i>
+            </a>      
+            
+            <a href="https://www.linkedin.com/in/maxasselmeier/" class="iconlink" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>                 
+        </div>
+    
+        <div class="logo">
+            <img src="/assets/quad.gif" class="sidebar-logo">
+        </div>
+    
+    </div>
+
+    <div class="main-content">
+        <h1>Robotics Resources</h1>
+        <h2>
+            <p>I've designated this page as just a place to dump a lot of robotics or research-adjacent resources that
+                I've found useful in my time as a researcher. I'll do my best to keep it current and updated (last update: 1/10/2024).
+            </p>   
+            
+            <p>Robotics challenges:</p>
+            <div class="step-links-container">
+                <ul>
+                    <li><a href="https://www.darpa.mil/research/programs/darpa-robotics-challenge" target="_blank">DARPA Robotics Challenge</a></li>
+                    <ul>
+                        <li>Very influential DARPA competition designed to evaluate general embodied task achievment including traversing rough terrain, opening a door, turning a valve, walking up stairs, etc.</li>
+                        <li>If you have ever seen the <a href="https://www.youtube.com/watch?v=g0TaYhjpOfo" target="_blank">compilation</a> of robots falling down, this is where that is from.</li>
+                        <li>There are a bunch of papers from all the teams as well as DARPA summarizing the main takeaways, I would point people to <a href="https://www.cs.cmu.edu/~cga/drc/" target="_blank">Chris Atkeson's DRC page</a> </li>
+                    </ul>
+                    <li><a href="https://www.darpa.mil/research/challenges/subterranean" target="_blank">DARPA Subterranean Challenge</a></li>
+                    <ul>
+                        <li>Another very influential DARPA competition, this time designed for robust autonomy in underground, perceptually degraded environments. </li>
+                        <li>Similar to DRC, most teams published technical reports on their frameworks that provide a lot of great insights into what it takes to deploy a team of robots in the real world.</li>   
+                    </ul>
+                </ul>
+            </div>
+
+            <p>Textbooks:</p>
+            <div class="step-links-container">
+                <ul>
+                    <li><a href="https://underactuated.csail.mit.edu/" target="_blank">Underactuated Robotics - Russ Tedrake</a></li>
+                    <ul>
+                        <li>Includes a ton of extremely interesting/useful supplementary resources including
+                            recorded lectures, online code snippets, figures, etc. 
+                        </li>
+                    </ul>
+                    <li><a href="https://lavalle.pl/planning/" target="_blank">Planning Algorithms - Steven M. LaValle</a></li>
+                    <ul>
+                        <li>A great introduction to robotics and motion planning in general. The book also has a few different recommended routes in the preface 
+                            depending on your background and what you're looking to get out of the book. Free to download, and bonus points for UIUC alum.
+                        </li>
+                    </ul>
+                </ul>
+            </div>    
+            
+            <p>Repositories:</p>
+            <div class="step-links-container">
+                <ul>
+                    <li><a href="https://github.com/AtsushiSakai/PythonRobotics" target="_blank">Python Robotics</a></li>
+                    <ul>
+                        <li>Ton of introductory robotics concepts/algorithms to play around with in Python</li>
+                        <li><a href="https://arxiv.org/abs/1808.10703" target="_blank">Associated ArXiv paper</a></li>
+                    </ul>
+                </ul>
+            </div>
+
+            <p>Media:</p>
+            <div class="step-links-container">
+                <ul>
+                    <li><a href="https://www.human-robot-interaction.org/podcast-overview/" target="_blank">Human-Robot Interaction Podcast</a></li>
+                    <ul>
+                        <li>Great podcast that breaks down a lot of under-discussed parts of robotics and research in general</li>
+                    </ul>
+                    <li><a href="https://www.youtube.com/c/TheRobotBrainsPodcast" target="_blank">The Robot Brains Podcast</a></li>
+                    <ul>    
+                        <li>Robotics podcast hosted by Pieter Abbeel with some all-star guests like Fei-Fei Li!</li>
+                    </ul>
+                    <li><a href="https://www.incontrolpodcast.com/" target="_blank">InControl Podcast</a></li>
+                    <ul>
+                        <li>Podcast on control topics in general, not just robotics, but a fun structure where you are able to learn about each guest's path through control theory and engineering</li>
+                    </ul>
+                    <li><a href="https://www.ieee-ras.org/soft-robotics/podcasts" target="_blank">Soft Robotics Podcast</a></li>
+                    <ul>
+                        <li>Official podcast from the IEEE Robotics and Automation Society. I think it was originally designed to largely cover soft robotics, but has since expanded to the whole robotics field</li>
+                    </ul>
+                    <li><a href="https://mtmason.com/matt-mason-robotics-blog/" target="_blank">Matt Mason's Blog</a></li>
+                    <ul>
+                        <li>Blog from Matt Mason, previous Director of the Carnegie Mellon Robotics Institute and now the Chief Scientist at Berkshire Grey. A cool and interactive way to muse about robotics</li>
+                    </ul>
+                </ul>
+            </div>
+
+        </h2>
+
+    </div>
+
+</body>
