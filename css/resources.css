@@ -1,10 +1,10 @@
-.step-img-container {
+.res-img-container {
     width: 100%;
     display: flex;
     margin-bottom: 25px;
 }
 
-.step-img-container img {
+.res-img-container img {
     border: 5px solid black;
     margin-left: 5px;
     margin-left: 5px;
@@ -12,11 +12,20 @@
     display: inline-block;
 }
 
-.step-links-container {
+.res-links-container {
     margin-top: 5px;
     margin-bottom: 25px;
 }
 
-.step-links-container a {
+.res-links-container a {
     color: #5c6b28;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.res-separator {
+border-bottom: 1px solid black;
+
 }
