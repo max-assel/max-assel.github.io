@@ -64,100 +64,154 @@
         <h1>Robotics Resources</h1>
         <h2>
             <p>I've designated this page as just a place to dump a lot of robotics or research-adjacent resources that
-                I've found useful in my time as a researcher. I'll do my best to keep it current and updated (last update: 1/10/2024).
+                I've found useful in my time as a researcher. I'll do my best to keep it current and updated (last update: 1/20/2024).
             </p>   
             
-            <p>Robotics challenges:</p>
-            <div class="res-links-container">
-                <ul>
-                    <li><a href="https://www.darpa.mil/research/programs/darpa-robotics-challenge" target="_blank">DARPA Robotics Challenge</a></li>
-                    <ul>
-                        <li>Very influential DARPA competition designed to evaluate general embodied task achievment including traversing rough terrain, opening a door, turning a valve, walking up stairs, etc.</li>
-                        <li>If you have ever seen the <a href="https://www.youtube.com/watch?v=g0TaYhjpOfo" target="_blank">compilation</a> of robots falling down, this is where that is from.</li>
-                        <li>There are a bunch of papers from all the teams as well as DARPA summarizing the main takeaways, I would point people to <a href="https://www.cs.cmu.edu/~cga/drc/" target="_blank">Chris Atkeson's DRC page</a> </li>
-                    </ul>
-                    <li><a href="https://www.darpa.mil/research/challenges/subterranean" target="_blank">DARPA Subterranean Challenge</a></li>
-                    <ul>
-                        <li>Another very influential DARPA competition, this time designed for robust autonomy in underground, perceptually degraded environments. </li>
-                        <li>Similar to DRC, most teams published technical reports on their frameworks that provide a lot of great insights into what it takes to deploy a team of robots in the real world.</li>   
-                    </ul>
-                </ul>
-            </div>
-
-            <p>Textbooks:</p>
-            <div class="res-links-container">
-                <ul>
-                    <li><a href="https://underactuated.csail.mit.edu/" target="_blank">Underactuated Robotics - Russ Tedrake</a></li>
-                    <ul>
-                        <li>Includes a ton of extremely interesting/useful supplementary resources including
-                            recorded lectures, online code snippets, figures, etc. 
-                        </li>
-                    </ul>
-                    <li><a href="https://lavalle.pl/planning/" target="_blank">Planning Algorithms - Steven M. LaValle</a></li>
-                    <ul>
-                        <li>A great introduction to robotics and motion planning in general. The book also has a few different recommended routes in the preface 
-                            depending on your background and what you're looking to get out of the book. Free to download, and bonus points for UIUC alum.
-                        </li>
-                    </ul>
-                </ul>
-            </div>    
-            
-            <p>Repositories:</p>
-            <div class="res-links-container">
-                <ul>
-                    <li><a href="https://github.com/AtsushiSakai/PythonRobotics" target="_blank">Python Robotics</a></li>
-                    <ul>
-                        <li>Ton of introductory robotics concepts/algorithms to play around with in Python</li>
-                        <li><a href="https://arxiv.org/abs/1808.10703" target="_blank">Associated ArXiv paper</a></li>
-                    </ul>
-                </ul>
-            </div>
-
-            <p>Media:</p>
-            <div class="res-links-container">
-                <ul>
-                    <li><a href="https://www.human-robot-interaction.org/podcast-overview/" target="_blank">Human-Robot Interaction Podcast</a></li>
-                    <ul>
-                        <li>Great podcast that breaks down a lot of under-discussed parts of robotics and research in general</li>
-                    </ul>
-                    <li><a href="https://www.youtube.com/c/TheRobotBrainsPodcast" target="_blank">The Robot Brains Podcast</a></li>
-                    <ul>    
-                        <li>Robotics podcast hosted by Pieter Abbeel with some all-star guests like Fei-Fei Li!</li>
-                    </ul>
-                    <li><a href="https://www.incontrolpodcast.com/" target="_blank">InControl Podcast</a></li>
-                    <ul>
-                        <li>Podcast on control topics in general, not just robotics, but a fun structure where you are able to learn about each guest's path through control theory and engineering</li>
-                    </ul>
-                    <li><a href="https://www.ieee-ras.org/soft-robotics/podcasts" target="_blank">Soft Robotics Podcast</a></li>
-                    <ul>
-                        <li>Official podcast from the IEEE Robotics and Automation Society. I think it was originally designed to largely cover soft robotics, but has since expanded to the whole robotics field</li>
-                    </ul>
-                    <li><a href="https://mtmason.com/matt-mason-robotics-blog/" target="_blank">Matt Mason's Blog</a></li>
-                    <ul>
-                        <li>Blog from Matt Mason, previous Director of the Carnegie Mellon Robotics Institute and now the Chief Scientist at Berkshire Grey. A cool and interactive way to muse about robotics</li>
-                    </ul>
-                </ul>
-            </div>
-
             <table style="width:100%">
                 <tr>
-                    <th style="width:25%" rowspan="3">Media</th>
-                </tr>
-                <tr>
+                    <td class="table-header-row">Robotics challenges</td>
                     <td>
                         <ul>
-                            <li><a href="https://www.human-robot-interaction.org/podcast-overview/" target="_blank">Human-Robot Interaction Podcast</a>
-                                --- Great podcast that breaks down a lot of under-discussed parts of robotics and research in general
-                            </li>
+                            <li><a href="https://www.darpa.mil/research/programs/darpa-robotics-challenge" target="_blank">DARPA Robotics Challenge</a></li>
+                            <ul>
+                                <li>Very influential DARPA competition designed to evaluate general embodied task achievment including traversing rough terrain, opening a door, turning a valve, walking up stairs, etc.</li>
+                                <li>If you have ever seen the <a href="https://www.youtube.com/watch?v=g0TaYhjpOfo" target="_blank">compilation</a> of robots falling down, this is where that is from.</li>
+                                <li>There are a bunch of papers from all the teams as well as DARPA summarizing the main takeaways, I would point people to <a href="https://www.cs.cmu.edu/~cga/drc/" target="_blank">Chris Atkeson's DRC page</a> </li>
+                            </ul>
+                            <li><a href="https://www.darpa.mil/research/challenges/subterranean" target="_blank">DARPA Subterranean Challenge</a></li>
+                            <ul>
+                                <li>Another very influential DARPA competition, this time designed for robust autonomy in underground, perceptually degraded environments. </li>
+                                <li>Similar to DRC, most teams published technical reports on their frameworks that provide a lot of great insights into what it takes to deploy a team of robots in the real world.</li>   
+                            </ul>
                         </ul>
                     </td>
                 </tr>
+            </table>     
+
+            <table style="width:100%">
                 <tr>
+                    <td class="table-header-row">Textbooks</td>
                     <td>
                         <ul>
-                            <li><a href="https://www.youtube.com/c/TheRobotBrainsPodcast" target="_blank">The Robot Brains Podcast</a>
-                                --- Robotics podcast hosted by Pieter Abbeel with some all-star guests like Fei-Fei Li!
-                            </li>
+                            <li><a href="https://underactuated.csail.mit.edu/" target="_blank">Underactuated Robotics - Russ Tedrake</a></li>
+                            <ul>
+                                <li>Includes a ton of extremely interesting/useful supplementary resources including
+                                    recorded lectures, online code snippets, figures, etc
+                                </li>
+                            </ul>
+                            <li><a href="https://lavalle.pl/planning/" target="_blank">Planning Algorithms - Steven M. LaValle</a></li>
+                            <ul>
+                                <li>A great introduction to robotics and motion planning in general. The book also has a few different recommended routes in the preface 
+                                    depending on your background and what you're looking to get out of the book. Free to download, and bonus points for UIUC alumni
+                                </li>
+                            </ul>
+                            <li><a href="https://rvl.cs.toronto.edu/backwards-reachability/" target="_blank">Backwards Reachability: A Tutorial - Ali Kuwajerwala and Cathlyn Chen</a></li>
+                            <ul>
+                                <li><i>Sort of</i> a textbook, a big collection of notes on backwards reachability along with YouTube videos and example code
+                                </li>
+                            </ul>
+                            <li><a href="https://roboticsknowledgebase.com/about/" target="_blank">Robotics Knowledgebase</a></li>
+                            <ul>
+                                <li>A Wikipedia for Robotics!
+                                </li>
+                            </ul>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <table style="width:100%">
+                <tr>
+                    <td class="table-header-row">Seminars</td>
+                    <td>
+                        <ul>
+                            <li><a href="https://theairlab.org/summer2020/" target="_blank">AirLab Summer School</a></li>
+                            <ul>
+                                <li>Boot camp for robotcs featuring slides and example code 
+                                </li>
+                            </ul>
+                            <li><a href="https://theairlab.org/tartanslamseries/" target="_blank">Tartan SLAM Series (Summer 2021)</a></li>
+                            <ul>
+                                <li>Seminar series on SLAM hosted by the AirLab at Carnegie Mellon 
+                                </li>
+                            </ul>     
+                            <li><a href="https://theairlab.org/tartanslamseries2/" target="_blank">Tartan SLAM Series (Fall 2021)</a></li>
+                            <ul>
+                                <li>Seminar series on SLAM hosted by the AirLab at Carnegie Mellon 
+                                </li>
+                            </ul>    
+                            <li><a href="https://theairlab.org/tartanplanningseries/" target="_blank">Tartan Planning Series (Spring 2023)</a></li>
+                            <ul>
+                                <li>Seminar series on planning hosted by the AirLab at Carnegie Mellon 
+                                </li>
+                            </ul>    
+                            <li><a href="https://www.youtube.com/@MITRoboticsSeminar" target="_blank">MIT Robotics Seminar</a></li>
+                            <ul>
+                                <li>Seminar series on robotics hosted by MIT (and uploaded on YouTube) 
+                                </li>
+                            </ul>    
+                            <li><a href="https://zardini.mit.edu/autonomytalks/" target="_blank">Autonomy Talks</a></li>
+                            <ul>
+                                <li>Seminar series on autonomy hosted by the Zardini Lab at MIT (and uploaded on <a href="https://www.youtube.com/@autonomytalks" target="_blank">YouTube</a>) 
+                                </li>
+                            </ul>                                                                                                                                
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <table style="width:100%">
+                <tr>
+                    <td class="table-header-row">Repositories</td>
+                    <td>
+                        <ul>
+                            <li><a href="https://github.com/AtsushiSakai/PythonRobotics" target="_blank">Python Robotics</a></li>
+                            <ul>
+                                <li>Ton of introductory robotics concepts/algorithms to play around with in Python</li>
+                                <li><a href="https://arxiv.org/abs/1808.10703" target="_blank">Associated ArXiv paper</a></li>
+                            </ul>
+                            <li><a href="https://github.com/leggedrobotics/ros_best_practices" target="_blank">ROS Best Practices</a></li>
+                            <ul>
+                                <li>Collection of tips/tricks/shortcuts for the ever important Robot Operating System (ROS)</li>
+                            </ul>
+                            <li><a href="https://github.com/autonlab/dr-drafts-sota-literature-search" target="_blank">SOTA Literature Search</a></li>
+                            <ul>
+                                <li>Tool from the Auton Lab at Carnegie Mellon that uses a sentence transformer to search for ArXiv papers of interest</li>
+                            </ul>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <table style="width:100%">
+                <tr>
+                    <td class="table-header-row">Miscellaneous</td>
+                    <td>
+                        <ul>
+                            <li><a href="https://www.human-robot-interaction.org/podcast-overview/" target="_blank">Human-Robot Interaction Podcast</a></li>
+                            <ul>
+                                <li>Great podcast that breaks down a lot of under-discussed parts of robotics and research in general</li>
+                            </ul>
+                            <li><a href="https://www.youtube.com/c/TheRobotBrainsPodcast" target="_blank">The Robot Brains Podcast</a></li>
+                            <ul>    
+                                <li>Robotics podcast hosted by Pieter Abbeel with some all-star guests like Fei-Fei Li!</li>
+                            </ul>
+                            <li><a href="https://www.incontrolpodcast.com/" target="_blank">InControl Podcast</a></li>
+                            <ul>
+                                <li>Podcast on control topics in general, not just robotics, but a fun structure where you are able to learn about each guest's path through control theory and engineering</li>
+                            </ul>
+                            <li><a href="https://www.ieee-ras.org/soft-robotics/podcasts" target="_blank">Soft Robotics Podcast</a></li>
+                            <ul>
+                                <li>Official podcast from the IEEE Robotics and Automation Society. I think it was originally designed to largely cover soft robotics, but has since expanded to the whole robotics field</li>
+                            </ul>
+                            <li><a href="https://mtmason.com/matt-mason-robotics-blog/" target="_blank">Matt Mason's Blog</a></li>
+                            <ul>
+                                <li>Blog from Matt Mason, previous Director of the Carnegie Mellon Robotics Institute and now the Chief Scientist at Berkshire Grey. A cool and interactive way to muse about robotics</li>
+                            </ul>
+                            <li><a href="https://www.lists.kit.edu/sympa/info/robotics-worldwide" target="_blank">Robotics Worldwide Mailing List</a></li>
+                            <ul>
+                                <li>Big mailing list for robotics maintained by KIT in Germany, lots of job postings, PhD + Postdoc listings, calls for papers, etc.</li>
+                            </ul>
                         </ul>
                     </td>
                 </tr>
