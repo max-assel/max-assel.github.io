@@ -155,6 +155,12 @@
     font-size: 25px;
 }
 
+.numbered-list {
+    color: #748e40;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
 .dgap-gif-container {
     width: 100%;
     display: flex;
