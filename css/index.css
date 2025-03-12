@@ -21,6 +21,10 @@
     color: #5c6b28;
 }
 
+.res-separator {
+    border-bottom: 1px solid black;
+}
+
 table {
     border-collapse: collapse;
     
@@ -40,7 +44,3 @@ tr.spaceUnder>td {
     padding-bottom: 1em;
   }
 
-.res-separator {
-    border-bottom: 1px solid black;
-
-}

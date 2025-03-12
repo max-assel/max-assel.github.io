@@ -113,7 +113,7 @@
 .iconlink {
     font-size: 40px;
 
-    color: inherit; /* Get rid of hyperlink color */
+    color: white; /* Get rid of hyperlink color */
 }
 
 .sidebar-logo {
@@ -137,6 +137,10 @@
 
 .main-content h1 {
     margin-bottom: 25px;
+}
+
+.main-content h2 {
+    margin-bottom: 50px;
 }
 
 .main-content p {

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gap-based Planning</title> <!-- Title of the page -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="../css/dgap.css"> <!-- Link to the CSS file -->
+    <script src="https://kit.fontawesome.com/34a5319313.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+
+        <div class="sidebar-header">
+            <div class="sidebar-user">
+                <p>Max Asselmeier</p>
+            </div>
+            <img src="/assets/max.jpg" class="sidebar-user-img">
+        </div>
+            
+        <div class="sidebar-button-container">
+            <a href="../index.html" class="button">Home</a> <!-- 'a' tag defines a hyperlink -->
+            <div class="research-dropdown">
+                <a href="./research.html" class="button">Research</a>
+                <div class="research-dropdown-content">
+                    <a href="./semantic_egocan.html">Semantic Egocan</a>
+                    <a href="./gap_based_planning.html">Gap-based Torso Planning</a>
+                    <a href="./footstep_planning.html">Multi-modal Footstep Planning</a>
+                </div>
+            </div>
+            <a href="./not_research.html" class="button">Not Research</a>
+            <a href="./robotics_resources.html" class="button">Robotics Resources</a>
+        </div>
+
+        <div class="link-container">
+            <a href="https://github.com/max-assel" class="iconlink" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="mailto:mass@gatech.edu" class="iconlink" target="_blank">
+                <i class="fa-solid fa-envelope"></i>      
+            </a>     
+            
+            <a href="https://scholar.google.com/citations?user=8r_IwQ0AAAAJ&hl=en" class="iconlink" target="_blank">
+                <i class="fa-brands fa-google-scholar"></i>
+            </a>      
+            
+            <a href="https://www.linkedin.com/in/maxasselmeier/" class="iconlink" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>                 
+        </div>
+    
+        <div class="logo">
+            <img src="/assets/quad.gif" class="sidebar-logo">
+        </div>
+    
+    </div>
+
+    <div class="main-content">
+        <h1>Minding the Gap</h1>
+        <h2>
+            <p>Gap-based planners are a family of local planners that parse incoming
+                sensor data (laser or LiDAR scans) and discretize it into polar regions
+                of free space called gaps (purple arcs in the gifs below). This is a computationally efficient departure
+                from traditional methods of discretizing the environment into Cartesian regions such as grid maps or 
+                voxel grids. Gaps have been proven to be quite effective in 
+                <a href="https://ieeexplore.ieee.org/document/9513583" target="_blank">static environments</a> on 
+                <a href="https://ieeexplore.ieee.org/document/10734154" target="_blank">wheeled robots</a>. However, extending These
+                approaches to (a) dynamic environments, and (b) legged robots, is non-trivial. Let's talk about what needs to be done!
+            </p>
+        <h2>
+
+        <h1>Dynamic Gap: Safe Gap-based Navigation in Dynamic Environments</h1>
+        <h2>
+            <p>In this work, we take our prior perception-informed gap-based 
+                planner and extend it to dynamic environments. This means that we 
+                must now detect the gaps in our environment <i>and</i> predict
+                how they will evolve over time. We leverage some robust tracking
+                algorithms to estimate gap dynamics, and we track intercepting
+                trajectories through model predictive control (MPC). A diagram
+                of our overall workflow is shown below.
+            </p>
+
+            <img src="/assets/dynamic_gap_diagram.png" class="dgap-diagram">
+
+            <p>We tested our planner out against state-of-the-art benchmarks, and 
+                we found that our planner was able to navigate through complex 
+                dynamic environments while suffering very few collisions.
+            </p>
+
+            <img src="/assets/arena_benchmarks.png" class="dgap-diagram">
+
+            <p>Check out the gifs below to see our planner in action.</p>
+
+            <div class="dgap-gif-container">
+                <img src="/assets/dgap_empty.gif">
+                <img src="/assets/dgap_factory.gif">
+                <img src="/assets/dgap_hospital.gif">
+            </div>
+  
+            <p>Want to learn more? Check out the following links:</p>
+            <table style="width:100%">
+                <tr class="spaceUnder">
+                    <td>
+                        <a href="https://arxiv.org/abs/2210.05022" target="_blank">Paper</a>
+                    </td>
+                    <td>
+                        <a href="https://www.youtube.com/watch?v=EyW7pQFC8cQ" target="_blank">Video</a>
+                    </td>
+                    <td>
+                        <a href="https://github.com/ivaROS/DynamicGap" target="_blank">Code</a>
+                    </td>
+                </tr>
+            </table>    
+        </h2>
+
+        <!-- <h1>GPF-BG: A Hierarchical Vision-Based Planning Framework for Safe Quadrupedal Navigation</h1>
+        <h2>
+            <p>Alright, now let's talk about how we can extend these gap-based planners to legged platforms.
+            </p>
+
+            <p>Want to learn more? Check out the following links:</p>
+            <table style="width:100%">
+                <tr class="spaceUnder">
+                    <td>
+                        <a href="https://ieeexplore.ieee.org/document/10160804" target="_blank">Paper</a>
+                    </td>
+                    <td>
+                        <a href="https://www.youtube.com/watch?v=avUnefrbhY8" target="_blank">Video</a>
+                    </td>
+
+                </tr>
+            </table> 
+
+        </h2> -->
+
+    </div>
+
+</body>

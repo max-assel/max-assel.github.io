@@ -2,9 +2,9 @@
 <html>
 
 <head>
-    <title>Steppability</title> <!-- Title of the page -->
+    <title>Multi-modal Footstep Planning</title> <!-- Title of the page -->
     <link rel="stylesheet" href="../css/style.css"> <!-- Link to the CSS file -->
-    <link rel="stylesheet" href="../css/step.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="../css/mmp.css"> <!-- Link to the CSS file -->
     <script src="https://kit.fontawesome.com/34a5319313.js" crossorigin="anonymous"></script>
 </head>
 
@@ -27,9 +27,9 @@
             <div class="research-dropdown">
                 <a href="./research.html" class="button">Research</a>
                 <div class="research-dropdown-content">
-                    <a href="./dynamic_gap.html">Dynamic Gap</a>
-                    <a href="./steppability.html">Steppability</a>
-                    <a href="./footstep.html">Footstep Planning</a>
+                    <a href="./semantic_egocan.html">Semantic Egocan</a>
+                    <a href="./gap_based_planning.html">Gap-based Torso Planning</a>
+                    <a href="./footstep_planning.html">Multi-modal Footstep Planning</a>
                 </div>
             </div>
             <a href="./not_research.html" class="button">Not Research</a>
@@ -61,41 +61,38 @@
     </div>
 
     <div class="main-content">
-        <h1>Steppability</h1>
+        <h1>Multi-modal Footstep Planning</h1>
         <h2>
-            <p>A crucial element in the legged planning pipeline is determining
-                where in our local environment we can plan footsteps.
+            <p>Footstep planning is fundamentally a hybrid planning problem: we 
+                must choose a discrete set of footstep locations (and often times
+                a discrete set of regions that these footsteps are placed upon) 
+                while also synthesizing continuous trajectories that enable the 
+                robot to transition between these footsteps.
             </p>
 
-            <p>Often, this is accomplishing through classical point cloud
-                processing approaches such as RANSAC, region growing, etc. 
-                However, when you are running onboard hardware and need 
-                to operate in realtime for tasks like footstep planning,
-                these point cloud-based approaches can bottleneck your 
-                framework and limit your ability to plan reactively.
+            <p>You can attack this problem through many ways: pure search, pure optimization,
+                or, as we did, a combination of these two approaches. This allows us to cater
+                the benefits of search to the discrete planning problem and the benefits of 
+                optimization to the continuous planning problem.
             </p>
 
-            <p>With this work, we are investigating if this task of
-                local environment steppability evaluation can be 
-                accomplished through a learned approach where we bypass
-                the expensive point cloud processing step and instead 
-                treat it is a segmentation task.</p>
+            <p>When you choose to take a hierarchical approach such as this, you must then
+                also make considerations about how your different hierarchy levels will
+                coordinate. To provide some synergy and integration between these two
+                planning levels, we adapt the concept of offline experience.
             </p>
             
-            <div class="step-img-container">
-                <img src="/assets/steppability_frames.png" class="step-img">
-                <img src="/assets/egocan.png" class="step-img">
-            </div>
-
-            <div class="step-img-container">
-                <img src="/assets/steppability.png" class="step-img">
-                <img src="/assets/pc_step2.png" class="step-img">
+            <div class="mmp-img-container">
+                <img src="/assets/uneven_screenshot.png" class="mmp-img">
+                <img src="/assets/ramp_screenshot.png" class="mmp-img">
+                <img src="/assets/chotu.png" class="mmp-img">
             </div>
 
             <p>Want to learn more? Check out the following links:</p>
-            <div class="step-links-container">
+            <div class="mmp-links-container">
                 <ul>
-                    <li><a href="https://arxiv.org/abs/2501.00112" target="_blank">Paper</a></li>
+                    <li><a href="https://arxiv.org/abs/2311.08354" target="_blank">Paper</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=NHK-VPDyDm0&t=2s" target="_blank">Video</a></li>
                 </ul>
             </div>         
         </h2>
