@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Failure Detection for Humanoids</title> <!-- Title of the page -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="../css/step.css"> <!-- Link to the CSS file -->
+    <script src="https://kit.fontawesome.com/34a5319313.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+
+        <div class="sidebar-header">
+            <div class="sidebar-user">
+                <p>Max Asselmeier</p>
+            </div>
+            <img src="/assets/max.jpg" class="sidebar-user-img">
+        </div>
+
+        <!-- <div class="sidebar-catchphrase">
+            <p>Perception-Informed Legged Navigation</p>
+        </div> -->
+            
+        <div class="sidebar-button-container">
+            <a href="../index.html" class="button">Home</a> <!-- 'a' tag defines a hyperlink -->
+            <div class="research-dropdown">
+                <a href="./research.html" class="button">Research</a>
+                <div class="research-dropdown-content">
+                    <a href="./g1.html">Failure Detection for Humanoids</a>
+                    <a href="./gap_based_planning.html">QuadGap</a>
+                    <a href="./footstep_planning.html">QuadPiPS</a>
+                </div>
+            </div>
+            <a href="./not_research.html" class="button">Not Research</a>
+            <a href="./robotics_resources.html" class="button">Robotics Resources</a>
+        </div>
+
+        <div class="link-container">
+            <a href="https://github.com/max-assel" class="iconlink" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="mailto:mass@gatech.edu" class="iconlink" target="_blank">
+                <i class="fa-solid fa-envelope"></i>      
+            </a>     
+            
+            <a href="https://scholar.google.com/citations?user=8r_IwQ0AAAAJ&hl=en" class="iconlink" target="_blank">
+                <i class="fa-brands fa-google-scholar"></i>
+            </a>      
+            
+            <a href="https://www.linkedin.com/in/maxasselmeier/" class="iconlink" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>                 
+        </div>
+    
+        <div class="logo">
+            <img src="/assets/buddies.gif" class="sidebar-logo">
+        </div>
+    
+    </div>
+
+    <div class="main-content">
+        <h1>Foundation Models for Humanoids</h1>
+        <h2>
+            <p>We have settled on this nice pre-training plus post-training
+                recipe for getting a multi-modal foundation model to generalize
+                (somewhat) to manipulation or loco-manipulation tasks.
+            </p>
+
+            <p>However, this pipeline is finnicky. To me, this process
+                of post-training is essentially overfitting. You are collecting
+                100-200 demonstrations (painstakingly) for your desired task.
+                Then, you post-train and your model can perform your task... sometimes.
+                In doing so, you lose any generalization from the pre-trained model.
+                There is no other task it can effectively do now. Furthermore, it can
+                only do what <i>you</i> demonstrated. If you move your humanoid a few steps
+                back or a few steps to the right of where you collected your day, you're not
+                going to get good performance.
+            </p>
+
+            <div class="step-img-container">
+                <img src="/assets/teleop.png" class="step-img">
+            </div>
+
+            <p>With this work, we first develop a failure detection system for humanoids.
+                This performs test-time reasoning with a VLM orchestrator agent plus a
+                learned visual failure detector that run in tandem to determine if 
+                the foundation model is more or less set up to fail. In the event 
+                that it does fail, we also design a set of recovery tools including
+                locomotion and manipulation behaviors that can be autonomously called
+                to move the system back into an area of the environment where the model
+                is predicted to succeed.
+            </p>
+            
+            <div class="step-img-container">
+                <img src="/assets/g1_diagram.png" class="step-img">
+            </div>
+
+            <p>Want to learn more? Check out the following links:</p>
+            <div class="step-links-container">
+                <ul>
+                    <li><a href="/links/vla.html" target="_blank">Paper</a></li>
+                </ul>
+            </div>         
+        </h2>
+
+    </div>
+
+</body>

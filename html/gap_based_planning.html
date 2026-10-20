@@ -23,9 +23,9 @@
             <div class="research-dropdown">
                 <a href="./research.html" class="button">Research</a>
                 <div class="research-dropdown-content">
-                    <a href="./semantic_egocan.html">Semantic Egocan</a>
-                    <a href="./gap_based_planning.html">Gap-based Torso Planning</a>
-                    <a href="./footstep_planning.html">Multi-modal Footstep Planning</a>
+                    <a href="./g1.html">Failure Detection for Humanoids</a>
+                    <a href="./gap_based_planning.html">QuadGap</a>
+                    <a href="./footstep_planning.html">QuadPiPS</a>
                 </div>
             </div>
             <a href="./not_research.html" class="button">Not Research</a>
@@ -114,10 +114,26 @@
             </table>    
         </h2>
 
-        <!-- <h1>GPF-BG: A Hierarchical Vision-Based Planning Framework for Safe Quadrupedal Navigation</h1>
+        <h1>GPF-BG: A Hierarchical Vision-Based Planning Framework for Safe Quadrupedal Navigation</h1>
         <h2>
             <p>Alright, now let's talk about how we can extend these gap-based planners to legged platforms.
             </p>
+
+            <p>Under a quadrupedal framework, we must extend our normal disk-based collision checking. 
+                To do so, we establish an equivalent passing length:
+            </p>
+
+            <div class="step-img-container">
+                <img src="/assets/epl_result.png" class="step-img">
+            </div>
+
+            <p>As well as an equivalent radial length:</p>
+
+            <div class="step-img-container">
+                <img src="/assets/erl_result.png" class="step-img">
+            </div>
+
+            <p>These two geometry metrics are used to determine the safe navigation of the quadrupedal robot in the environment.</p>
 
             <p>Want to learn more? Check out the following links:</p>
             <table style="width:100%">
@@ -128,11 +144,13 @@
                     <td>
                         <a href="https://www.youtube.com/watch?v=avUnefrbhY8" target="_blank">Video</a>
                     </td>
-
+                    <td>
+                        <a href="https://github.com/ivaROS/quad_gap" target="_blank">Code</a>
+                    </td>
                 </tr>
             </table> 
 
-        </h2> -->
+        </h2>
 
     </div>
 
