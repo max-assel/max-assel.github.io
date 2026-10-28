@@ -135,6 +135,13 @@
     margin-left: 300px;
 }
 
+.video-content {
+    display: flex; /* Center the video horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 40px); /* Full screen height minus padding */
+}
+
 .main-content h1 {
     margin-bottom: 25px;
 }
