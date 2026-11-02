@@ -58,103 +58,97 @@
 
     <div class="main-content">
         <h1>Minding the Gap</h1>
-        <h2>
-            <p>Gap-based planners are a family of local planners that parse incoming
-                sensor data (laser or LiDAR scans) and discretize it into polar regions
-                of free space called gaps (purple arcs in the gifs below). This is a computationally efficient departure
-                from traditional methods of discretizing the environment into Cartesian regions such as grid maps or 
-                voxel grids. Gaps have been proven to be quite effective in 
-                <a href="https://ieeexplore.ieee.org/document/9513583" target="_blank">static environments</a> on 
-                <a href="https://ieeexplore.ieee.org/document/10734154" target="_blank">wheeled robots</a>. However, extending These
-                approaches to (a) dynamic environments, and (b) legged robots, is non-trivial. Let's talk about what needs to be done!
-            </p>
-        <h2>
+        <p>Gap-based planners are a family of local planners that parse incoming
+            sensor data (laser or LiDAR scans) and discretize it into polar regions
+            of free space called gaps (purple arcs in the gifs below). This is a computationally efficient departure
+            from traditional methods of discretizing the environment into Cartesian regions such as grid maps or 
+            voxel grids. Gaps have been proven to be quite effective in 
+            <a href="https://ieeexplore.ieee.org/document/9513583" target="_blank">static environments</a> on 
+            <a href="https://ieeexplore.ieee.org/document/10734154" target="_blank">wheeled robots</a>. However, extending These
+            approaches to (a) dynamic environments, and (b) legged robots, is non-trivial. Let's talk about what needs to be done!
+        </p>
 
         <h1>Dynamic Gap: Safe Gap-based Navigation in Dynamic Environments</h1>
-        <h2>
-            <p>In this work, we take our prior perception-informed gap-based 
-                planner and extend it to dynamic environments. This means that we 
-                must now detect the gaps in our environment <i>and</i> predict
-                how they will evolve over time. We leverage some robust tracking
-                algorithms to estimate gap dynamics, and we track intercepting
-                trajectories through model predictive control (MPC). A diagram
-                of our overall workflow is shown below.
-            </p>
+        <p>In this work, we take our prior perception-informed gap-based 
+            planner and extend it to dynamic environments. This means that we 
+            must now detect the gaps in our environment <i>and</i> predict
+            how they will evolve over time. We leverage some robust tracking
+            algorithms to estimate gap dynamics, and we track intercepting
+            trajectories through model predictive control (MPC). A diagram
+            of our overall workflow is shown below.
+        </p>
 
-            <img src="/assets/dynamic_gap_diagram.png" class="dgap-diagram">
+        <img src="/assets/dynamic_gap_diagram.png" class="dgap-diagram">
 
-            <p>We tested our planner out against state-of-the-art benchmarks, and 
-                we found that our planner was able to navigate through complex 
-                dynamic environments while suffering very few collisions.
-            </p>
+        <p>We tested our planner out against state-of-the-art benchmarks, and 
+            we found that our planner was able to navigate through complex 
+            dynamic environments while suffering very few collisions.
+        </p>
 
-            <img src="/assets/arena_benchmarks.png" class="dgap-diagram">
+        <img src="/assets/arena_benchmarks.png" class="dgap-diagram">
 
-            <p>Check out the gifs below to see our planner in action.</p>
+        <p>Check out the gifs below to see our planner in action.</p>
 
-            <div class="dgap-gif-container">
-                <img src="/assets/dgap_empty.gif">
-                <img src="/assets/dgap_factory.gif">
-                <img src="/assets/dgap_hospital.gif">
-            </div>
-  
-            <p>Want to learn more? Check out the following links:</p>
-            <table style="width:100%">
-                <tr class="spaceUnder">
-                    <td>
-                        <a href="https://arxiv.org/abs/2210.05022" target="_blank">Paper</a>
-                    </td>
-                    <td>
-                        <a href="https://www.youtube.com/watch?v=EyW7pQFC8cQ" target="_blank">Video</a>
-                    </td>
-                    <td>
-                        <a href="https://github.com/ivaROS/DynamicGap" target="_blank">Code</a>
-                    </td>
-                </tr>
-            </table>    
-        </h2>
+        <div class="dgap-gif-container">
+            <img src="/assets/dgap_empty.gif">
+            <img src="/assets/dgap_factory.gif">
+            <img src="/assets/dgap_hospital.gif">
+        </div>
+
+        <p>Want to learn more? Check out the following links:</p>
+        <table style="width:100%">
+            <tr class="spaceUnder">
+                <td>
+                    <a href="https://arxiv.org/abs/2210.05022" target="_blank">Paper</a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=EyW7pQFC8cQ" target="_blank">Video</a>
+                </td>
+                <td>
+                    <a href="https://github.com/ivaROS/DynamicGap" target="_blank">Code</a>
+                </td>
+            </tr>
+        </table>    
 
         <h1>GPF-BG: A Hierarchical Vision-Based Planning Framework for Safe Quadrupedal Navigation</h1>
-        <h2>
-            <p>Alright, now let's talk about how we can extend these gap-based planners to legged platforms.
-            </p>
+        <p>Alright, now let's talk about how we can extend these gap-based planners to legged platforms.
+        </p>
 
-            <p>Under a quadrupedal framework, we must extend our normal disk-based collision checking. 
-                To do so, we establish an equivalent passing length:
-            </p>
+        <p>Under a quadrupedal framework, we must extend our normal disk-based collision checking. 
+            To do so, we establish an equivalent passing length:
+        </p>
 
-            <div class="step-img-container" style="justify-content: center;">
-                <img src="/assets/epl_final.png" class="step-img" style="width: 50%;">
-            </div>
+        <div class="step-img-container" style="justify-content: center;">
+            <img src="/assets/epl_final.png" class="step-img" style="width: 50%;">
+        </div>
 
-            <p>As well as an equivalent radial length:</p>
+        <p>As well as an equivalent radial length:</p>
 
-            <div class="step-img-container" style="justify-content: center;">
-                <img src="/assets/erl_final.png" class="step-img" style="width: 50%;">
-            </div>
+        <div class="step-img-container" style="justify-content: center;">
+            <img src="/assets/erl_final.png" class="step-img" style="width: 50%;">
+        </div>
 
-            <p>These two geometry metrics estimate the evolution of the robot's collision
-                geometry based on its present state. As the quadruped translates and rotates,
-                its box-like collision geometry will change. These equivalent lengths help us
-                understand how this geometry changes as a function of the robot's distance 
-                and angle from its waypoint.</p>
+        <p>These two geometry metrics estimate the evolution of the robot's collision
+            geometry based on its present state. As the quadruped translates and rotates,
+            its box-like collision geometry will change. These equivalent lengths help us
+            understand how this geometry changes as a function of the robot's distance 
+            and angle from its waypoint.</p>
 
-            <p>Want to learn more? Check out the following links:</p>
-            <table style="width:100%">
-                <tr class="spaceUnder">
-                    <td>
-                        <a href="https://ieeexplore.ieee.org/document/10160804" target="_blank">Paper</a>
-                    </td>
-                    <td>
-                        <a href="https://www.youtube.com/watch?v=avUnefrbhY8" target="_blank">Video</a>
-                    </td>
-                    <td>
-                        <a href="https://github.com/ivaROS/quad_gap" target="_blank">Code</a>
-                    </td>
-                </tr>
-            </table> 
+        <p>Want to learn more? Check out the following links:</p>
+        <table style="width:100%">
+            <tr class="spaceUnder">
+                <td>
+                    <a href="https://ieeexplore.ieee.org/document/10160804" target="_blank">Paper</a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/watch?v=avUnefrbhY8" target="_blank">Video</a>
+                </td>
+                <td>
+                    <a href="https://github.com/ivaROS/quad_gap" target="_blank">Code</a>
+                </td>
+            </tr>
+        </table> 
 
-        </h2>
 
     </div>
 
